@@ -1,0 +1,679 @@
+/* Font Faces */
+@font-face {
+    font-family: 'GothamRounded-Bold';
+    src: url('../fonts/GothamRounded-Bold.eot');
+    src: url('../fonts/GothamRounded-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothamRounded-Bold.woff') format('woff'),
+         url('../fonts/GothamRounded-Bold.ttf') format('truetype'),
+         url('../fonts/GothamRounded-Bold.svg#agendabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'GothamRounded-Book';
+    src: url('../fonts/GothamRounded-Book.eot');
+    src: url('../fonts/GothamRounded-Book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothamRounded-Book.woff') format('woff'),
+         url('../fonts/GothamRounded-Book.ttf') format('truetype'),
+         url('../fonts/GothamRounded-Book.svg#agendabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamRounded-Medium';
+    src: url('../fonts/GothamRounded-Medium.eot');
+    src: url('../fonts/GothamRounded-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothamRounded-Medium.woff') format('woff'),
+         url('../fonts/GothamRounded-Medium.ttf') format('truetype'),
+         url('../fonts/GothamRounded-Medium.svg#agendabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Styling */
+.main_wrapper {
+	min-width: 1032px;
+	height: auto;
+	margin: 0 auto;
+	background-color: #BCD9DD;
+}
+
+.join:hover {
+	cursor: pointer;
+}
+
+.path {
+	padding-bottom: 100px;
+	padding-top: 380px;
+}
+
+.pic {
+	float: left;
+	z-index: 1;
+}
+
+.free {
+	position: absolute;
+	z-index: 2;
+}
+
+.animate {
+	position: absolute;
+	z-index: 4;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+footer {
+	margin-top: 60px;
+	width: auto;
+	height: auto;
+	background-color: #F9745F;
+	color: #17363F;
+}
+
+.footer_content {
+	padding: 40px 0px 0px 70px;
+	text-align: center;
+}
+
+.footer_text1 {
+	font-family: GothamRounded-Bold, Arial;
+	font-size: 41px;
+}
+
+.footer_text2 {
+	font-family: GothamRounded-Medium, Arial;
+	font-size: 20px;
+}
+
+.footer_text3 {
+	font-family: GothamRounded-Light, Arial;
+	font-size: 20px;
+}
+
+.footer_text3 {
+	font-family: GothamRounded-Light Arial;
+	font-size: 16px;
+}
+
+.footer_text3 > a {
+	color:  #2A4A51;
+}
+
+.footer_bottom {
+	height: 100px;
+	background-color: #17363F;
+	text-align: center;
+}
+
+.footer_bottom_text {
+	font-family: GothamRounded-Medium, Arial;
+	font-size: 22px;
+	color: white;
+	padding-top: 40px;
+}
+
+.footer_bottom_text > a {
+	color: #ffffff;
+}
+
+.pop_box {
+	display: none;
+	position: absolute;
+	width: 375px;
+	height: 220px;
+	border: solid 2px #ffffff;
+	border-radius: 5px;
+	background-color: #315667;
+	z-index: 6;
+}
+
+.pop_box_close {
+	margin-left: 340px;
+}
+
+.pop_box_close:before {
+	content: "---";
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: -3px;
+}
+
+.pop_box:hover {
+	cursor: pointer;
+}
+
+.pop_box_text {
+	text-align: center;
+	color: #ffffff;
+	font-family: GothamRounded-Bold, Arial;
+	font-size: 18px;
+	padding-top: 10px;
+}
+
+.pop_box_text_2 {
+	text-align: center;
+	color: #ffffff;
+	font-family: GothamRounded-Book, Arial;
+	font-size: 12px;
+	line-height: 14px;
+	padding: 10px 20px 15px 20px;
+}
+
+.pop_box_button {
+	text-align: center;
+	color: #ffffff;
+	border: solid 1px #F9745F;
+	background-color: #F9745F;
+	margin: 10px 80px 0px 80px;
+	border-radius: 15px;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.pop_box_button:before {
+	content: "Discover More";
+}
+
+.pop_box_last1 {
+	text-align: center;
+	color: #ffffff;
+	border: solid 1px #F9745F;
+	background-color: #F9745F;
+	border-radius: 15px;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	float: left;
+	margin-left: 30px;
+	width: 150px;
+}
+
+.pop_box_last2 {
+	text-align: center;
+	color: #ffffff;
+	border: solid 1px #F9745F;
+	background-color: #F9745F;
+	border-radius: 15px;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	float: left;
+	width: 150px;	
+	margin-left: 20px;
+}
+
+/* Image Positioning */
+
+.logo {
+	left: 0;
+	position: fixed;
+	z-index: 8;
+}
+
+.cloud1 {
+	margin: 100px 0px 0px 300px;
+}
+
+.banner {
+	margin: 40px 0px 0px 375px;
+	z-index: 3;
+}
+
+.banner_text {
+	text-transform: uppercase;
+	color: #000000;
+	font-family: GothamRounded-Bold, Arial;
+	font-size: 24px;
+	margin: 65px 0px 0px 425px;
+	color: #7C2525;
+	z-index: 4;
+}
+
+.tv {
+	margin: 75px 0px 0px 370px;
+}
+
+.tv_text {
+	margin: 150px 0px 0px 430px;
+	font-family: GothamRounded-Bold, Arial;
+	z-index: 3;
+	text-align: center;
+	font-size: 22px;
+	color: #ffffff;
+}
+
+.join {
+	right: 0;
+	position: fixed;
+	z-index: 8;
+}
+
+.clock {
+	margin-top: 230px;
+}
+
+.cloud2 {
+	margin: 200px 0px 0px 40px;
+	z-index: 0;
+}
+
+.cloud3 {
+	margin-top: 150px;
+	right: 70px;
+}
+
+.guy1 {
+	margin: -70px 0px 0px 180px;
+	z-index: 5;
+}
+
+.guy1_animate > div {
+	float: left;
+	position: absolute;
+}
+
+.house {
+	margin: -138px 0px 0px 284px;
+}
+
+.house_top {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	margin-left: 300px;
+	z-index:7;
+	cursor: pointer;
+}
+
+.petrol {
+	margin: -50px 0px 0px 530px;
+}
+
+.tree1 {
+	margin: -100px 0px 0px 800px;
+}
+
+.tree2 {
+	margin: 40px 0px 0px 900px;
+}
+
+.button1 {
+	margin: 50px 0px 0px 750px;
+}
+
+.popbox1 {
+	margin: 130px 0px 0px 550px;
+}
+
+.road1 {
+	margin: 1px 7px 0px 286px;
+}
+
+.road2 {
+	margin-right: 5px;
+}
+
+.my1 {
+	margin-left: 50px;
+}
+
+.cloud_small1 {
+	margin-left: 250px;
+}
+
+.cloud_small2 {
+	margin-left: 550px;
+}
+
+.glow_text {
+	margin: -80px 0px 0px 830px;
+	font-family: GothamRounded-Bold, Arial;
+	font-size: 18px;
+	display: none;
+	color: #F9745F;
+	line-height: 16px;
+}
+
+.road4 {
+	margin: 4px 0px 4px 710px;
+}
+
+.button2 {
+	margin: 130px 0px 0px 410px;
+}
+
+.popbox2 {
+	margin: 130px 0px 0px 280px;
+}
+
+.tree3 {
+	margin: -30px 0px 0px 550px;
+}
+
+.mall {
+	margin: -35px 0px 0px 330px;
+}
+
+.basket {
+	margin: 80px 0px 0px 580px;
+}
+
+.road7 {
+	margin: 47px 0px 0px 140px;
+}
+
+.road6 {
+	margin: 47px 5px;
+}
+
+.tree4 {
+	margin: 50px 0px 0px 250px;
+}
+
+.tree5 {
+	margin: 50px 0px 0px 430px;
+}
+
+.cloud_big1 {
+	margin: -50px 0px 0px 730px;
+}
+
+.my2 {
+	margin: -150px 0px 0px 750px;
+}
+
+.cloud_small3 {
+	margin: -100px 0px 0px 920px;
+}
+
+.road8 {
+	margin: -10px 0px 7px 140px;
+}
+
+.button3 {
+	margin: 110px 0px 0px 530px; 
+	z-index: 3;
+}
+
+.popbox3 {
+	margin: 110px 0px 0px 380px;
+}
+
+.tree6 {
+	margin: 150px 0px 0px 50px;
+}
+
+.bank1 {
+	margin: 35px 0px 0px 420px;
+}
+
+.bank {
+	margin: -35px 0px 0px 430px;
+}
+
+.bank2 {
+	margin: 35px 0px 0px 630px;
+}
+
+.guy2 {
+	margin: 45px 0px 0px 840px;
+}
+
+.road9 {
+	margin-left: 140px;
+}
+
+.road10 {
+	margin: 35px 5px 0px 5px;
+}
+
+.road11 {
+	margin: 35px 5px 0px 0px;
+}
+
+.road12 {
+	margin: 37px 0px 5px;
+}
+
+.tree7 {
+	margin: 40px 0px 0px 150px;
+}
+
+.road13 {
+	margin-left: 815px;
+}
+
+.button4 {
+	margin: 60px 0px 0px 820px;
+}
+
+.popbox4 {
+	margin: 140px 0px 0px 520px;
+}
+
+.button5 {
+	margin: 60px 0px 0px 140px;
+}
+
+.popbox5 {
+	margin: 120px 0px 0px 150px;
+}
+
+.computer {
+	margin: -80px 0px 0px 250px;
+}
+
+.tree8 {
+	margin: -40px 0px 0px 450px;
+}
+
+.cafe {
+	margin: 10px 0px 0px 650px;
+}
+
+.cup {
+	margin: 0px 0px 0px 830px;
+}
+
+.road17 {
+	margin: 48px 0px 5px 100px;
+}
+
+.road16 {
+	margin: 50px 7px 0px;
+}
+
+.road15 {
+	margin: 50px 5px 0px 0px;
+}
+
+.tree9 {
+	margin: 10px 0px 0px 350px;
+}
+
+.cloud_big2 {
+	margin: 0px 0px 0px 550px;
+}
+
+.car {
+	margin: 80px 0px 0px 480px;
+}
+
+.tree10 {
+	margin: 10px 0px 0px 800px;
+}
+
+.road18 {
+	margin-left: 95px;
+}
+
+.button6 {
+	margin: 100px 0px 0px 220px;
+}
+
+.popbox6 {
+	margin: 140px 0px 0px 60px;
+}
+
+.sim {
+	margin: 0px 0px 0px 300px;
+}
+
+.ipad {
+	margin: 0px 0px 0px 220px;
+}
+
+.hotel {
+	margin: -50px 0px 0px 655px;
+}
+
+.tree11 {
+	margin: 70px 0px 0px 900px;
+}
+
+.road19 {
+	margin: 6px 0px 0px 100px;
+}
+
+.road20 {
+	margin: 45px 5px 0px;
+}
+
+.road21 {
+	margin: 45px 5px 0px 0px;
+}
+
+.road22 {
+	margin-top: 43px;
+}
+
+.cloud_big3 {
+	margin: 10px 0px 0px 80px;
+}
+
+.my3 {
+	margin: 20px 0px 0px 60px;
+}
+
+.cloud_small4 {
+	margin: 50px 0px 0px 280px;
+}
+
+.tree12 {
+	margin: 40px 0px 0px 600px;
+}
+
+.button7 {
+	margin: -40px 0px 0px 740px;
+}
+
+.popbox7 {
+	margin: -60px 0px 0px 580px;
+}
+
+.road23 {
+	margin: 3px 0px 3px 720px;
+}
+
+.button8 {
+	margin: 120px 0px 0px 550px;
+}
+
+.popbox8 {
+	margin: 120px 0px 0px 450px;
+}
+
+.tree13 {
+	margin: 80px 0px 0px 50px;
+}
+
+.tree14 {
+	margin: 70px 0px 0px 150px;
+}
+
+.tree15 {
+	margin: 0px 0px 0px 850px;
+}
+
+.boarding {
+	margin: 0px 0px 0px 430px;
+}
+
+.road26 {
+	margin: 50px 0px 0px 234px;
+}
+
+.road25 {
+	margin: 50px 3px 0px;
+}
+
+.car2 {
+	margin: 10px 0px 0px 80px;
+}
+
+.cloud_big4 {
+	margin: 0px 0px 0px 650px;
+}
+
+.road27 {
+	margin: 5px 0px 5px 230px;
+}
+
+.button9 {
+	margin: 110px 0px 0px 480px;
+}
+
+.popbox9 {
+	margin: 110px 0px 0px 300px;
+}
+
+.tree16 {
+	margin: 40px 0px 0px 150px;
+}
+
+.airport {
+	margin: -95px 0px 0px 270px;
+}
+
+.plane {
+	margin: -40px 0px 0px 500px;
+}
+
+.guy3 {
+	margin: 0px 0px 0px 770px
+}
+
+.road28 {
+	margin-left: 235px;
+}
+
+.road29 {
+	margin: 45px 0px 0px 5px;
+}
+
+.footer_up {
+	margin-top: 20px;
+	left:50px;
+	cursor: pointer;
+}
+
+.footer_up_text {
+	margin-top: 30px;
+	left:110px;
+}
+
+.footer_fb {
+	margin-top: -40px;
+	right: 100px;
+}
+
+.footer_twitter {
+	margin-top: -40px;
+	right: 40px;
+}
